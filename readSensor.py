@@ -44,7 +44,10 @@ def read_word_2c(adr):
         return val
 
 def dist(a,b):
-    return math.sqrt((a*a)+(b*b))
+    result = math.sqrt((a*a)+(b*b))
+    if result != 0:
+        return result
+    return 0.001
 
 def get_y_rotation(x,y,z):
     radians = math.atan2(x, dist(y,z))
@@ -189,11 +192,9 @@ def read_filtered_out():
         }
         return data
     except IOError:
-            print('An error occured trying to read..(IOError)')
-            return {"result":-1}
+        KeyboardInterrupt('An error occured trying to read..(IOError)')
     except KeyboardInterrupt:
-            print('The operation have been cancel by keyboard.(KeyboardInterrupt)')
-            return {"result":-2}
+        raise KeyboardInterrupt('The operation have been cancel by keyboard.(KeyboardInterrupt)')
 
 
 
