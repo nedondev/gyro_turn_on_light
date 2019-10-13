@@ -3,7 +3,6 @@ This repository aim for practice to use module MPU6050 3-axis Accelerometer/Gyro
 
 Pre-install:
 sudo apt-get install i2c-tools
-sudo i2cdetect -y 1
 ref: https://pinout.xyz/pinout/i2c
 
 Pre-config:
@@ -17,3 +16,7 @@ raspi-config Tool via Terminal
 6.Use the right arrow to select the <Finish> button.
 7.Select yes when it asks to reboot.
 ref: https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all
+
+checking IMU address:
+sudo i2cdetect -y 1\
+for MPU 6050 default at 0x68
