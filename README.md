@@ -20,3 +20,7 @@ ref: https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all
 checking IMU address:
 sudo i2cdetect -y 1\
 for MPU 6050 default at 0x68
+
+reference :
+YazarKerem İzgöl."Raspberry Pi 3 İle MPU6050 İvmeölçer/Jiroskop Kullanımı #17"
+    Available: https://maker.robotistan.com/raspberry-pi-dersleri-16-mpu6050-ivmeolcerjiroskop-kullanimi/?utm_source=youtube&utm_medium=aciklama&utm_campaign=python_mpu6050
